@@ -346,7 +346,7 @@ function getSine(num) {
  * 2, 2    => '10'
  */
 function numberToStringInBase(number, base) {
-  return parseInt(number, base);
+  return number.toString(base);
 }
 
 /**
@@ -609,7 +609,7 @@ function getRandomInteger(/* min, max */) {
  * 3, 4 => 5
  */
 function getHypotenuse(a, b) {
-  const result = Math.sqrt(a ** 2 + b ** 2);
+  const result = Math.hypot(a, b);
   return result;
 }
 
